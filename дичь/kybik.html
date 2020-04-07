@@ -1,0 +1,29 @@
+<style>
+	#blok {
+			width: 200px;
+			height: 200px;
+	}
+</style>
+	<div id="blok"> 
+
+	</div>
+<script> 
+    /// localStorage.setItem( 's', 1);
+	///if (localStorage.getItem('a') !== null) {}
+	document.addEventListener('keydown', function(event) {
+		switch (event.code) {
+			case "ArrowLeft" :
+				document.getElementById('blok').style.backgroundColor="yellow";
+				break;
+			case "ArrowRight" :
+				document.getElementById('blok').style.backgroundColor="green";
+				break;
+			case "ArrowUp" :
+				document.getElementById('blok').style.backgroundColor="grey";
+				break;
+			case "ArrowDown" :
+				document.getElementById('blok').style.backgroundColor="brown";
+				break;
+		}
+	});
+</script>
